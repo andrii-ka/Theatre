@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4>
+            This page will display the list of all shows for Administrator to edit/add/delete/edit show times.
+        </h4>
+        <p>
+            It will have the following capabilities:
+            <ul>
+                <li>Edit a show in popup dialog</li>
+                <li>Add a new show in popup dialog</li>
+                <li>links to Show Times page for each show</li>
+                <li>Delete button for each show</li>
+            </ul>
+        </p>
+        <p>
+            Will call the following endpoints:
+            <ul>
+                <li>GET: api/Shows to display the list of all shows</li>
+                <li>PUT: api/Shows/{id} to edit a show</li>
+                <li>POST: api/Shows to add a show</li>
+                <li>DELETE: api/Shows/{id} to delete a show</li>
+            </ul>
+        </p>
+    </div>
+</div>
+

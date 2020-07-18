@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4>
+            This page will display the list of shows for a day (default = today).
+        </h4>
+        <p>
+            It will have the following capabilities:
+            <ul>
+                <li>select a date to display shows for</li>
+                <li>select a show name to filter by it</li>
+                <li>links to view previous/next day (I guess this is what is meant by pagination in the task, number of shows for a single day cannot be huge enough to need to show them in pages)</li>
+                <li>"Book" button and field to specify how many tickets to book near each show if the user is authorized</li>
+            </ul>
+        </p>
+        <p>
+            Will call the following endpoints:
+            <ul>
+                <li>POST: api/ShowTimes/filtered to display the list of shows</li>
+                <li>GET: api/Shows/names to populate dropdown for filtering by show name. Filtering itself can be done on client</li>
+                <li>POST: api/ShowTimes/{id}/book/{ticketsToBook} to book tickets for a given show time</li>
+            </ul>
+        </p>       
+    </div>
+</div>

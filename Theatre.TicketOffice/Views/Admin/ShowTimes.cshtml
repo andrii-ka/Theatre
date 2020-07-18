@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "ShowTimes";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4>
+            This page will display the list of show times (show id = @ViewData["ShowId"]) for Administrator to edit/add/delete.
+        </h4>
+        <p>
+            It will have the following capabilities:
+            <ul>
+                <li>Edit a show time in popup dialog</li>
+                <li>Add a new show time in popup dialog</li>
+                <li>Delete button for each show time</li>
+            </ul>
+        </p>
+        <p>
+            Will call the following endpoints:
+            <ul>
+                <li>
+                    GET: api/Shows/{showId}/ShowTimes to display the list of all show times for current show
+                </li>
+                <li>PUT: api/ShowTimes/{id} to edit a show time</li>
+                <li>POST: api/ShowTimes to add one or multiple show times</li>
+                <li>DELETE: api/ShowTimes/{id} to delete a show time</li>
+            </ul>
+        </p>
+    </div>
+</div>
+

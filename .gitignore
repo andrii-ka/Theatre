@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Theatre.TicketOffice/bin/Debug/netcoreapp2.1
+/Theatre.TicketOffice/obj
+/Theatre.TicketOffice/Theatre.TicketOffice.csproj.user
